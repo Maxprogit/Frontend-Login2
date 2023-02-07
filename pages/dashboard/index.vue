@@ -1,10 +1,17 @@
-<template>
-    <h1>Hola</h1>
-</template>
+ <template>
+    <div style="padding: 20px;">
+        <Principal />
+    </div>
+ </template>
 
+ <script>
+import Principal from '~/components/dashboard/principal.vue';
 
-<script>
-    export default {
-        layout: 'dashboard'
+    export default{
+        auth: true,
+        layout: 'dashboard',
+        components: {
+            Principal
+        }
     }
 </script>

@@ -34,9 +34,8 @@ export default {
   components: true,
 
   router: {
-    middleware: ['auth']
+    middleware:['auth']
   },
-
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
@@ -57,27 +56,27 @@ export default {
       home: '/',
       callback: '/'
     },
-    localStorage: false,
-    resetOnError: true,
-    strategies: {
-      local: {
-      cookies: false,
-      user: {
-        property: user
-      },
-      token: {
-        property: 'token',
-        required: true
+      localStorage: false,
+      resetOnError: true,
+      strategies: {
+        local: {
+        cookie: false,
+        user: {
+          property: 'user'
+        },
+        token: {
+          property: 'token',
+          required: true
         },
         endpoints: {
           login: {
-            url:'user/login',
+            url: '/user/login',
             method: 'post'
           },
-          user:false
+          user: false
         },
         rewriteRedirects: true,
-        fullPathRedirect: true
+        fullPathRedirect: true 
       }
     }
   },
@@ -92,7 +91,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,

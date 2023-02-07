@@ -1,11 +1,11 @@
 <template>
     <v-row class="renglon">
-        <nuxt />
+        <nuxt/>
     </v-row>
 </template>
 
-<style scoped>
-    .renglon {
+<style>
+    .renglon{
         width: 100vw;
         height: 100vh;
         display: flex;
