@@ -9,7 +9,7 @@
         <v-list-item>
           <v-list-content>
             <v-list-item-title class="text-h6">
-              BRGC
+              MGG
             </v-list-item-title>
             <v-list-item-subtitle>
               Sistema
